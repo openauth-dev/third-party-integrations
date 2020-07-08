@@ -5,7 +5,7 @@ type: Plugin
 developer: OpenAuth.dev
 developer_url: https://www.openauth.dev/developer
 price: Free
-url: https://www.openauth.dev
+url: https://github.com/openauth-dev/dev.openauth.wsc.login
 ---
 
 
