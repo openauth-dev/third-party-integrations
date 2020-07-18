@@ -2,8 +2,8 @@
 collection: Development
 platform: Laravel Socialite
 type: Extension
-developer: Titus Kirch
-developer_url: https://tkirch.dev
+developer: OpenAuth.dev
+developer_url: https://www.openauth.dev/developer
 price: Free
 url: https://github.com/openauth-dev/SocialiteOpenAuthProvider
 ---
