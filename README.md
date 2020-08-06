@@ -34,7 +34,7 @@ Collection: Content management
 Platform: WoltLab Suite
 Type: Plugin
 Developer: OpenAuth.dev
-Developer_url: https://www.openauth.dev/developer
+DeveloperUrl: https://www.openauth.dev/developer
 Price: Free
 Url: https://github.com/openauth-dev/dev.openauth.wsc.login
 Description: OpenAuth.dev login and registration for WoltLab Suite 3.0, 3.1 & 5.2.
