@@ -1,0 +1,12 @@
+---
+
+name: Validate files against schema.json
+
+on: [push]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: nwisbeta/validate-yaml-schema@v1.0

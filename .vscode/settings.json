@@ -1,0 +1,5 @@
+{
+      "yaml.schemas": {
+        "/home/runner/work/third-party-integrations/third-party-integrations/.jsonschema": ["/*.yml"]
+      }
+}

@@ -1,0 +1,85 @@
+{
+   "title":"The root schema",
+   "$schema":"http://json-schema.org/draft-07/schema",
+   "$id":"https://github.com/openauth-dev/third-party-integrations/blob/main/.jsonschema",
+   "type":"object",
+   "description":"The root schema comprises the entire JSON document.",
+   "examples":[
+      {
+         "Collection":"Content management",
+         "Platform":"WoltLab Suite",
+         "Type":"Plugin",
+         "Developer":"OpenAuth.dev",
+         "DeveloperUrl":"https://www.openauth.dev/developer",
+         "Price":"Free",
+         "Url":"https://github.com/openauth-dev/dev.openauth.wsc.login",
+         "Description":"OpenAuth.dev login and registration for WoltLab Suite 3.0, 3.1 & 5.2."
+      }
+   ],
+   "required":[
+      "Collection",
+      "Platform",
+      "Type",
+      "Developer",
+      "DeveloperUrl",
+      "Price",
+      "Url",
+      "Description"
+   ],
+   "properties":{
+      "Collection":{
+         "$id":"#/properties/Collection",
+         "enum":[
+            "Content management",
+            "Desktop",
+            "Development",
+            "E-commerce"
+         ],
+         "title":"The Collection schema",
+         "description":"Main category of the integration which must be one of:\n\nContent management – for integrations with content management systems.\nDesktop – for desktop software with a GUI.\nDevelopment – for command line tools, client libraries, integrations with programming languages or frameworks.\nE-commerce – for integrations with webshops and e-commerce platforms."
+      },
+      "Platform":{
+         "$id":"#/properties/Platform",
+         "type":"string",
+         "title":"The Platform schema",
+         "description":"This is the name of the platform you created the solution for. Depending on the collection this will be different. For example:\n\nFor content management systems it will be the name of the CMS.\nFor desktop software this is the name of the operating system.\nFor development tools you can specify the programming language or framework.\nFor e-commerce integrations this is the name of the e-commerce product."
+      },
+      "Type":{
+         "$id":"#/properties/Type",
+         "type":"string",
+         "title":"The Type schema",
+         "description":"This describes the type of solution. You may follow the naming convention of\nthe platform that is being integrated with.\n\nFor example, add-ons for WordPress are officially called \"plugins\", so the type would be Plugin. For Magento integrations are officially called an \"extension\", so the type would be Extension."
+      },
+      "Developer":{
+         "$id":"#/properties/Developer",
+         "type":"string",
+         "title":"The Developer schema",
+         "description":"This is the full name of the software development agency or person that authored and maintains this third-party solution."
+      },
+      "DeveloperUrl":{
+         "$id":"#/properties/DeveloperUrl",
+         "type":"string",
+         "title":"The DeveloperUrl schema",
+         "description":"This is a link to the homepage of the developer. Preferably this would be a location where users can contact you if they have any questions."
+      },
+      "Price":{
+         "$id":"#/properties/Price",
+         "type":"string",
+         "title":"The Price schema",
+         "description":"This is either Free or the price in the main currency that you charge users with, for example: $ 19.00."
+      },
+      "Url":{
+         "$id":"#/properties/Url",
+         "type":"string",
+         "title":"The Url schema",
+         "description":"This is the location of the download page for your third-party add-on. It should describe the solution and offer a way for the user to install or download it in order to add it to their platform."
+      },
+      "Description":{
+         "$id":"#/properties/Description",
+         "type":"string",
+         "title":"The Description schema",
+         "description":"The description should contain the main features of your integration. For example, whether it supports resizing or preserving metadata, whether it optimizes images in the background, etcetera.\n\nYou could also provide more information about how it integrates exactly with the platform. For example, whether it optimizes images when they are uploaded by a user to the CMS, or whether they are optimized when the pages are published.\n\nPlease avoid describing what OpenAuth.dev is. Feel free to include this information on your download page, though.\n\nThis description is preferably between 80 and 160 characters long."
+      }
+   },
+   "additionalProperties":true
+}

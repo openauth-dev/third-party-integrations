@@ -1,0 +1,10 @@
+---
+
+Collection: Development
+Platform: Laravel Socialite
+Type: Extension
+Developer: OpenAuth.dev
+DeveloperUrl: https://www.openauth.dev/developer
+Price: Free
+Url: https://github.com/openauth-dev/SocialiteOpenAuthProvider
+Description: OpenAuth.dev provider for Laravel Socialite.
